@@ -46,14 +46,39 @@ obj2.getA().getB();
 
 
 //4. Print  //1,2 for below array
-const Ar2 = [1,2];
+    const Ar2 = [1,2];
 
-Array.prototype.print = () => {
-    this.result = '';
-    // for(let[i,elem] of this){
-    //     if(i === )
-    // }
-    console.log(result);
+    const Ar2Result = Ar2.toString();
+
+    console.log(Ar2Result);
+
+
+//5. create newB = new b5('x','y') using inheritence 
+
+//Parent
+const a5 = function(x){
+    this.x= x;
+}
+//Child
+const b5 = function(x,y){
+    this.y=y;
 }
 
-Ar2.print();
+// Answer : use call
+a5.prototype.getX = ()=>{
+    return this.x;
+}
+
+const b5 = function(x,y) {
+    this.y = y;
+    a.call(this, x);
+    getY() {
+        return this.y;
+    }
+}
+
+
+
+//6.
+
+
